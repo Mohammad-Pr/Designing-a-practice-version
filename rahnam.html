@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KPwzZ_kR2o37KOhPEPBbx8H2edkI_36AkjOvDMjIQQ&s">
+  <title> راهنمای سطوح</title>
+  <!-- bootstrap -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<!-- ! -->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="اپلیکیشن هدا">
+</head>
+<body>
+<br>
+<h4 style="text-align: center; font-weight: 700;color: rgb(67, 67, 67);"> راهنمای سطوح</h4>
+<br>
+<!-- <h2>Animated Accordion</h2>
+<p>Click on the buttons to open the collapsible content.</p> -->
+
+<button class="accordion"> سطح هویت اولیه <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg></button>
+<div class="panel">
+  <p>اگر پذیرنده اعتبار سنجی شهروند را تا سطح هویت اولیه در خواست کند با وارد کردن اقلام هویتی و تطبیق آن با اطلاعات ثبت احوال و همچنین تایید مالکیت شماره تلفن همراه شهروند این سطح از احراز انجام می شود</p>
+</div>
+<br>
+
+<button class="accordion"> سطح هویت قوی <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg></button>
+
+<div class="panel">
+  <p>اگر پذیرنده ای اعتبار سنجی تا سطح احراز هویت قوی را بخواهد، در ابتدا تصویر شهروند گرفته میشود و پس از آن با پایگاه داده ثبت احوال تطابق داده میشود پس از انجام این سطح، شهروند میتواند ادامه فرایندی را که در سایت یا اپلیکیشن پذیرنده نیاز به این سطح داشته را انجام دهد.</p>
+  <p>توجه داشته باشید که برای انجام این سطح از احراز تنها یکبار پرداخت کافی است و اگر برنامه حذف شود نیاز به پرداخت مجدد نیست</p>
+  <p>:شرایط تصویر برداری</p>
+  <p>بدون آرایش </p>
+  <p>نمایش گردی کامل صورت شامل گوشه ابروها ،چانه گونه ها و پیشانی</p>
+  <p>بدون عینک طبی یا آفتابی و کلاه</p>
+</div>
+<br>
+<button class="accordion"> سطح گواهی امضای الکترونیک <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg></button>
+<div class="panel">
+  <p>در صورتی که نیاز است شهروند برای پذیرنده سند یا قرار دادی را امضا کند .
+
+نیاز به صدور گواهی امضای دیجیتال میباشد، در این خصوص نیاز به احراز در این سطح است. توجه داشته باشید که برای انجام این سطح از احراز باید پرداخت انجام شود و با حذف نرم افزار یا اطلاعات آن باید پرداخت انجام شده و گواهی امضا مجدد صادر شود</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</body>
+</html>
